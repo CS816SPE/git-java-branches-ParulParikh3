@@ -57,6 +57,7 @@ void printPath(struct Node* head ,int arr[], int temp)
 
 int main()
 {
+	
 	int temp=0;
 	int arr[5];
 	struct Node* head=createNode(12);
@@ -67,6 +68,7 @@ int main()
 	head->right->left=createNode(7);
 	head->right->right=createNode(3);
 	
+	printf("This is the main");
 	printThegraph(head);
 	cout<<"\n";
 	printPath(head,arr,temp);
