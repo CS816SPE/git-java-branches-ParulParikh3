@@ -13,7 +13,8 @@ public class cal
 		{
 			System.out.println("1. ADD TWO NUMBER");
 			System.out.println("2. SUB TWO NUMBER");
-			System.out.println("3.EXIT");
+			System.out.println("3. MUL TWO NUMBER");
+			System.out.println("4.EXIT");
 			System.out.println("Enter your choice : ");
 			choice=scan.next().charAt(0);
 			switch(choice){
@@ -29,8 +30,13 @@ public class cal
 							res=a-b;
 							System.out.println("Result = " + res);
 							break;		
-				
-				case '3' :  System.exit(0);
+				case '3' : 	System.out.print("Enter Two Number : ");
+							a=scan.nextFloat();
+							b=scan.nextFloat();
+							res=a*b;
+							System.out.println("Result = " + res);
+							break;
+				case '4' :  System.exit(0);
 							break;
 
 				default :   System.out.print("INVALID CHOICE!!\n");
